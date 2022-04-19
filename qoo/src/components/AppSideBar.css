@@ -1,0 +1,28 @@
+.side-bar {
+  width: 15%;
+  height: 100%;
+  min-height: 900px;
+  max-height: 1100px;
+  background-color: #056cf2;
+}
+.side-bar-logo-box {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-bar-logo {
+  width: 40px;
+}
+.menu-box {
+  margin-top: 2cm;
+  color: white;
+  text-align: left;
+}
+.menu-box-item {
+  margin-bottom: 45px;
+  margin-left: 2cm;
+}
+.menu-box-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
