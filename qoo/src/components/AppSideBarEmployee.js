@@ -1,6 +1,6 @@
 import "./AppSideBar.css";
 
-function AppSideBar(){
+function AppSideBarEmployee(){
     return(
         <div className="side-bar">
             <div className="side-bar-logo-box">
@@ -27,20 +27,14 @@ function AppSideBar(){
                   <img className="menu-icon" src="./images/delivery.png" />
                    <span className="menu-text">Delivery</span> 
                 </div>
-                <div className="menu-box-item">
-                  <img className="menu-icon" src="./images/employee.png" />
-                   <span className="menu-text">Employee</span> 
-                </div>
+                
                 <div className="menu-box-item">
                   <img className="menu-icon" src="./images/production.png" />
                    <span className="menu-text">Production</span> 
                 </div>
-                <div className="menu-box-item">
-                <img className="menu-icon" src="./images/report.png" />
-                   <span className="menu-text">Report</span> 
-                </div>
+                
             </div>
         </div>
     )
 }
-export default AppSideBar;
+export default AppSideBarEmployee;

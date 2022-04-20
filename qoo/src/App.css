@@ -1,4 +1,8 @@
-
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),url("./Roboto/Roboto-Regular.ttf") format("truetype");
+ 
+}
 .App {
   background-color: #f2f2f2;
   display: flex;
@@ -8,6 +12,7 @@
   min-height: 1000px;
   max-width: 1920px;
   max-height: 1080px;
+  box-sizing: border-box;
 }
 .body-box {
   display: flex;
@@ -62,6 +67,8 @@
 .db-area {
   background-color: antiquewhite;
   display: flex;
+  max-width: 1300px;
+  justify-content: center;
 }
 
 .left-part{
@@ -83,6 +90,50 @@
   margin: 18px;
   border-radius: 20px;
 }
+.topic-text{
+  margin-left: 10px;
+  margin-top: 5px;
+  max-height: 25px;
+}
+.topic-box{
+  margin-top: 10px;
+  min-height: 30px;
+  max-height: 35px;
+  margin-left: 10px;
+  display: flex;
+}
+.hot-sale{
+  margin-left: 5px;
+  background-color: #FF8888;
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
+}
+.alert{
+  margin-left: 5px;
+  background-color: orange;
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
+}
+.shipping{
+  margin-left: 5px;
+  background-color: #42AC53 ;
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
+}
+.cart{
+  margin-left: 5px;
+  background-color: #42AC53 ;
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
+}
+
+.detail-box{
+  margin-left: 45px;
+}
 .right-box{
   background-color: white;
   width: 50%;
@@ -94,6 +145,7 @@
   display: flex;
   
   min-width: 720px;
+  max-width: 890px;
   min-height: 280px;
   background-color: yellow;
   
@@ -109,6 +161,7 @@
   width: 30%;
   background-color: blue;
   margin-right: 0.65cm;
+  display: flex;
 }
 .tall-box{
   height: 90%;
@@ -117,4 +170,5 @@
   min-width: 250px;
   margin: 18px;
   border-radius: 20px;
+  /* dis */
 }
