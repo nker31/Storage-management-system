@@ -1,38 +1,174 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),url("./Roboto/Roboto-Regular.ttf") format("truetype");
+ 
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #f2f2f2;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-width: 1100px;
+  min-height: 1000px;
+  max-width: 1920px;
+  max-height: 1080px;
+  box-sizing: border-box;
+}
+.body-box {
+  display: flex;
+}
+
+.right-body {
+  min-height: 900px;
+  max-height: 1080px;
+  width: 85%;
+  height: 100%;
+  background-color: #f2f2f2;
+
+}
+.nav-bar {
+  height: 50px;
+  background-color: white;
+  /* margin-top: px; */
+  display: flex;
+  flex-direction: row-reverse;
+}
+.profile-box {
+  margin-top: -10px;
+  margin-right: 2cm;
+  display: flex;
+}
+.profile-icon{
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  
+}
+.profile-box-left{
+  width: 50%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.profile-box-right{
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.username-text {
+  font-size: 16px;
+}
+.user-role {
+  margin-top: -18px;
+  font-size: 14px;
+}
+.db-area-header {
+  margin-left: 1cm;
+}
+.db-area {
+  background-color: antiquewhite;
+  display: flex;
+  max-width: 1300px;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-part{
+  width: 70%;
+  min-height: 550px;
+  margin-left: 0.65cm;
+}
+.two-in-one{
+  display: flex;
+  min-width: 720px;
+  max-width: 890px;
+  height: 250px;
+  background-color: green;
+}
+.left-box{
+  background-color: white;
+  width: 50%;
+  height: 85%;
+  margin: 18px;
+  border-radius: 20px;
+}
+.topic-text{
+  margin-left: 10px;
+  margin-top: 5px;
+  max-height: 25px;
+}
+.topic-box{
+  margin-top: 10px;
+  min-height: 30px;
+  max-height: 35px;
+  margin-left: 10px;
+  display: flex;
+}
+.hot-sale{
+  margin-left: 5px;
+  background-color: #FF8888;
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
+}
+.alert{
+  margin-left: 5px;
+  background-color: orange;
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
+}
+.shipping{
+  margin-left: 5px;
+  background-color: #42AC53 ;
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
+}
+.cart{
+  margin-left: 5px;
+  background-color: #42AC53 ;
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
+}
+
+.detail-box{
+  margin-left: 45px;
+}
+.right-box{
+  background-color: white;
+  width: 50%;
+  height: 85%;
+  margin: 18px;
+  border-radius: 20px;
+}
+.under-part{
+  display: flex;
+  
+  min-width: 720px;
+  max-width: 890px;
+  min-height: 280px;
+  background-color: yellow;
+  
+}
+
+.long-box{
+  width: 95%;
+  margin: 18px;
+  background-color: white;
+  border-radius: 20px;
+}
+.right-part{
+  width: 30%;
+  background-color: blue;
+  margin-right: 0.65cm;
+  display: flex;
+}
+.tall-box{
+  height: 90%;
+  background-color: white;
+  max-width: 300px;
+  min-width: 250px;
+  margin: 18px;
+  border-radius: 20px;
+  /* dis */
 }

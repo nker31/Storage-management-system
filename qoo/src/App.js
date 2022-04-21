@@ -1,12 +1,16 @@
-import logo from './logo.svg';
+import './Roboto/Roboto-Regular.ttf'
 import './App.css';
-
+import AppSideBar from "./components/AppSideBar";
+import AppSideBarEmployee from "./components/AppSideBarEmployee";
+import AppDashboard from "./components/AppDashboard";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      {/* <AppSideBar/> */}
+      <AppSideBarEmployee/>
+      <AppDashboard/>
+      
+      
     </div>
   );
 }
