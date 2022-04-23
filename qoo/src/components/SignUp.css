@@ -1,0 +1,32 @@
+.header-login{
+    background: #333;
+    height: 80px;
+    
+}
+
+.header-con{
+    display: flex;
+    height: 80px;
+    
+}
+
+.logo-login a {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding:20px;
+}
+
+.login-container{
+    max-width: 520px;
+    margin: 0 auto;
+    width: auto;
+    display:  flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}

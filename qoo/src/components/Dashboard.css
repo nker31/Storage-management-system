@@ -1,0 +1,27 @@
+
+.logout a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.menu-user{
+    width: 60%;
+    overflow: auto;
+}
+.menu-logout{
+    width: 40%;
+}
+.menu-logout a{
+    float: right;
+    text-align: center;
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.user{
+    width: 60%;
+    overflow: auto;
+}
