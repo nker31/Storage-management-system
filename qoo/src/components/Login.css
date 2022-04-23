@@ -43,10 +43,17 @@
     overflow: hidden;
     width: auto;
     height: auto;
-    min-height: 880px;
+    min-height: 800px;
     min-width: 500px;
 }
 
 .btn.signup{
     background: #056CF2;
+}
+
+
+.centered{
+    display: flex;
+    justify-content: center;
+    
 }
