@@ -4,6 +4,10 @@ import AppSideBar from "./components/AppSideBar";
 import AppSideBarEmployee from "./components/AppSideBarEmployee";
 import AppDashboard from "./components/AppDashboard";
 import AppStock from "./components/AppStock";
+import AppSaleHistory from './components/AppSaleHistory';
+import AppDelivery from './components/AppDelivery';
+import AppEmployee from './components/AppEmployee';
+import AppProduction from './components/AppProduction';
 // import AppNavBar from './components/AppNavBar';
 
 
@@ -13,8 +17,11 @@ function App() {
       <AppSideBar/>
       {/* <AppSideBarEmployee/> */}
       {/* <AppDashboard/> */}
-      <AppStock/>
-      
+      {/* <AppStock/> */}
+      {/* <AppSaleHistory/> */}
+      {/* <AppDelivery/>*/}
+      {/* <AppEmployee/> */}
+      <AppProduction/>
 
       
     </div>

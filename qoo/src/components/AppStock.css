@@ -8,20 +8,20 @@
     display: flex;
 }
 .search-zone{
-    width: 70%;
+    width: 85%;
 }
 .prod-text{
     margin-left: 1cm;
 }
 
 .prod-search{
-    margin-left: 10px;
+    margin-left: 5px;
     border: 3px solid #056CF2;
     border-radius: 5px;
 }
 .prod-button{
     margin-left: -10px;
-    margin-right: 10px;
+    margin-right: 5px;
     color: white;
     background-color: #056CF2;
     border: 3px solid #056CF2;
@@ -30,17 +30,17 @@
 }
 
 .cate-text{
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .cate-select{
     border: 3px solid #056CF2;
     border-radius: 5px;
-    margin-left: 10px;
+    margin-left: 5px;
     height: 21px;
 }
 .add-zone{
     text-align: right;
-    width: 30%;
+    width: 15%;
 }
 .add-button{
     margin-right: 1cm;
