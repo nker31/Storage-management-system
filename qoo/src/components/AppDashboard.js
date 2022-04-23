@@ -1,5 +1,5 @@
 import "./AppDashboard.css";
-
+import AppNavBar from "./AppNavBar";
 function AppDashboard(){
     return(
         <div className="right-body">

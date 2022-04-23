@@ -1,0 +1,44 @@
+
+.right-body {
+    min-height: 900px;
+    max-height: 1080px;
+    width: 85%;
+    height: 100%;
+    background-color: #f2f2f2;
+  
+  }
+  .nav-bar {
+    height: 50px;
+    background-color: white;
+    /* margin-top: px; */
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .profile-box {
+    margin-top: -10px;
+    margin-right: 2cm;
+    display: flex;
+  }
+  .profile-icon{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    
+  }
+  .profile-box-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-box-right{
+    width: 50%;
+  }
+  
+  .username-text {
+    font-size: 16px;
+  }
+  .user-role {
+    margin-top: -18px;
+    font-size: 14px;
+  }

@@ -1,0 +1,52 @@
+
+
+.stock-area-header{
+    margin-left: 1cm;
+}
+
+.filter-line{
+    display: flex;
+}
+.search-zone{
+    width: 70%;
+}
+.prod-text{
+    margin-left: 1cm;
+}
+
+.prod-search{
+    margin-left: 10px;
+    border: 3px solid #056CF2;
+    border-radius: 5px;
+}
+.prod-button{
+    margin-left: -10px;
+    margin-right: 10px;
+    color: white;
+    background-color: #056CF2;
+    border: 3px solid #056CF2;
+    border-radius: 5px;
+
+}
+
+.cate-text{
+    margin-left: 30px;
+}
+.cate-select{
+    border: 3px solid #056CF2;
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 21px;
+}
+.add-zone{
+    text-align: right;
+    width: 30%;
+}
+.add-button{
+    margin-right: 1cm;
+    height: 22px;
+    color: white;
+    background-color: #056CF2;
+    border: 3px solid #056CF2;
+    border-radius: 10px;
+}
