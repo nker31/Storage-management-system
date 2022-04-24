@@ -10,7 +10,10 @@ import AppEmployee from './components/AppEmployee';
 import AppProduction from './components/AppProduction';
 import AppCustomer from './components/AppCustomer';
 import AppCustomerData from './components/AppCustomerData';
+import AppReportMenu from './components/AppReportMenu';
+import AppReportType from './components/AppReportType';
 // import AppNavBar from './components/AppNavBar';
+
 
 
 function App() {
@@ -25,7 +28,9 @@ function App() {
       {/* <AppEmployee/> */}
       {/* <AppProduction/> */}
       {/* <AppCustomer/> */}
-      <AppCustomerData/>
+      {/* <AppCustomerData/> */}
+      {/* <AppReportMenu/> */}
+      <AppReportType />
 
       
     </div>
