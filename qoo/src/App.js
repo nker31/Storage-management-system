@@ -8,6 +8,8 @@ import AppSaleHistory from './components/AppSaleHistory';
 import AppDelivery from './components/AppDelivery';
 import AppEmployee from './components/AppEmployee';
 import AppProduction from './components/AppProduction';
+import AppCustomer from './components/AppCustomer';
+import AppCustomerData from './components/AppCustomerData';
 // import AppNavBar from './components/AppNavBar';
 
 
@@ -21,7 +23,9 @@ function App() {
       {/* <AppSaleHistory/> */}
       {/* <AppDelivery/>*/}
       {/* <AppEmployee/> */}
-      <AppProduction/>
+      {/* <AppProduction/> */}
+      {/* <AppCustomer/> */}
+      <AppCustomerData/>
 
       
     </div>
