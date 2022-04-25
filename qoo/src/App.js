@@ -12,6 +12,7 @@ import AppCustomer from './components/AppCustomer';
 import AppCustomerData from './components/AppCustomerData';
 import AppReportMenu from './components/AppReportMenu';
 import AppReportType from './components/AppReportType';
+import AppAddProduct from './components/AppAddProduct';
 // import AppNavBar from './components/AppNavBar';
 
 
@@ -19,20 +20,21 @@ import AppReportType from './components/AppReportType';
 function App() {
   return (
     <div className="App">
-      <AppSideBar/>
+      <AppSideBar />
       {/* <AppSideBarEmployee/> */}
-      {/* <AppDashboard/> */}
-      {/* <AppStock/> */}
+      {/* <AppDashboard /> */}
+      <AppStock/>
       {/* <AppSaleHistory/> */}
-      {/* <AppDelivery/>*/}
+      {/* <AppDelivery/> */}
       {/* <AppEmployee/> */}
       {/* <AppProduction/> */}
       {/* <AppCustomer/> */}
       {/* <AppCustomerData/> */}
       {/* <AppReportMenu/> */}
-      <AppReportType />
+      {/* <AppReportType /> */}
+      {/* <AppAddProduct/> */}
 
-      
+
     </div>
   );
 }
