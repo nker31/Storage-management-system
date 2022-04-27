@@ -1,0 +1,29 @@
+.box-of-top{
+    display: flex;
+    justify-content: center;
+    height: 185px;
+}
+.cus-data-area{
+    /* background-color: aqua; */
+    min-height: 120px;
+    min-width: 500px;
+    max-width: 600px;
+}
+.cus-data-line{
+    margin: 15px;
+    
+
+}
+.cus-data-text{
+    margin-left: 10px;
+}
+
+.save-button{
+    /* margin-right: 1cm; */
+    margin-top: 10px;
+    height: 22px;
+    color: white;
+    background-color: #056CF2;
+    border: 3px solid #056CF2;
+    border-radius: 10px;
+}

@@ -1,0 +1,59 @@
+.container-log{
+    max-width: 960px;
+    display: table;
+    margin: 0 auto;
+}
+
+.header-log{
+    background: #fff;
+    height: 80px;
+}
+
+.header-con-log{
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+.logo-login a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+
+.login-container{
+    max-width: 680px;
+    max-height: 1000px;
+    margin: 0 auto;
+    width: auto;
+    display:  flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background: #fff;
+    
+}
+
+.bg{
+    background: #056CF2;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    min-height: 800px;
+    min-width: 500px;
+}
+
+.btn.signup{
+    background: #056CF2;
+}
+
+
+.centered{
+    display: flex;
+    justify-content: center;
+    
+}

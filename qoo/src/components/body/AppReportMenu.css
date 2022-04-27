@@ -1,0 +1,28 @@
+.report-two-box{
+    width:35%;
+    background-color: white;
+    margin: 50px;
+    justify-content: center;
+    text-align: center;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 400px;
+    max-height: 450px;
+    border-radius: 20px;
+}
+.calendar-area{
+    min-width: 250px;
+    min-height: 250px;
+    background-color: white;
+    border: 3px solid #056CF2;
+    color: rgb(209, 21, 121);
+}
+
+.search-button{margin-top: 20px;
+    width: 40%;
+    height: 35px;
+    border-radius: 13px;
+    color: white;
+    background-color: #056CF2;
+    border: 3px solid #056CF2;
+}

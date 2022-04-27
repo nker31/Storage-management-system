@@ -14,6 +14,16 @@
   max-height: 1080px;
   box-sizing: border-box;
 }
+.qoo {
+  width: 15%;
+  height: 100%;
+  max-width: 225px;
+  min-height: 900px;
+  max-height: 1100px;
+  background-color: #056cf2;
+  box-sizing: border-box;
+}
+
 .body-box {
   display: flex;
 }
@@ -171,4 +181,13 @@
   margin: 18px;
   border-radius: 20px;
   /* dis */
+}
+
+
+.form{
+  width: 500px;
+}
+
+.container{
+  padding:20px
 }

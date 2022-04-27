@@ -1,6 +1,14 @@
+import React, {useContext} from "react";
 import "./AppDashboard.css";
+import {Redirect} from "react-router-dom";
+import { AuthContext } from "./Auth";
+import firebaseConfig from "../config";
 
 function AppDashboard(){
+  const { currentUser } = useContext(AuthContext);
+  if (!currentUser) {
+      return <Redirect to="/login"/>;
+  }
     return(
         <div className="right-body">
         <div className="nav-bar">
@@ -10,7 +18,7 @@ function AppDashboard(){
               <img className="profile-icon" src="./images/profile.png"/>
 
             </div>
-            <div className="profile-box-right">
+            <div className="profile-box-right" onClick={() => firebaseConfig.auth().signOut()}>
               <p className="username-text">username</p>
               <p className="user-role">role</p>
             </div>

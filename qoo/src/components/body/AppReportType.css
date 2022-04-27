@@ -1,0 +1,41 @@
+.header-box{
+    text-align: center;
+    /* background-color: red; */
+    margin-top: 1cm;
+
+}
+.box-of-report{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1cm;
+}
+
+.report-type-select-box{
+    width: 100%;
+    /* background-color: blueviolet; */
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+    row-gap: 48px;
+}
+.type-box{
+    min-width: 250px;
+    max-width: 400px;
+    min-height: 250px;
+    max-height: 300px;
+    border-radius: 20px;
+    background-color: white;
+}
+.report-header{
+    margin-left: 20px;
+}
+
+.report-detail-box{
+    margin-left: 50px;
+}
+
+.report-detail{
+    margin-top: -10px;
+}
