@@ -61,8 +61,9 @@ function AppSaleHistory(){
 
                 </div>
             </div>
+            <div className="table-box">
             <table class= 'table'>
-                  <thead>
+                  <thead className="table-header">
                       <tr>
                         <th scope="col">Product</th>
                         <th scope="col">Customer</th>
@@ -72,6 +73,7 @@ function AppSaleHistory(){
                         <th scope="col">Status</th>
                         <th scope="col">Date</th>
                         <th scope="col">Total</th>
+                        <th scope="col"></th>
                       </tr>
                     </thead>
                         {data?.map((item, i) => (
@@ -92,7 +94,7 @@ function AppSaleHistory(){
                             </tbody>
                         ))}
                 </table>
-            
+                </div>
         </div>
     )
 }

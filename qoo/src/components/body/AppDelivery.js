@@ -53,18 +53,20 @@ function AppDelivery(){
                 </div>
                 <div className="add-zone">
                     <a href="/adddelivery">
-                    <button className="add-button" type="">Add Delivery History</button>
+                    <button className="add-button" type="">Add delivery history</button>
                     </a>
                 </div>
             </div>
+            <div className="table-box">
             <table class= 'table'>
-                  <thead>
+                  <thead className="table-header">
                       <tr>
                         <th scope="col">Tracking</th>
                         <th scope="col">Customer</th>
                         <th scope="col">Quantity</th>
                         <th scope="col">Date</th>
                         <th scope="col">Address</th>
+                        <th scope="col"></th>
                       </tr>
                     </thead>
                         {data?.map((item, i) => (
@@ -82,7 +84,7 @@ function AppDelivery(){
                             </tbody>
                         ))}
                 </table>
-            
+                </div>
         </div>
     )
 }

@@ -35,14 +35,16 @@ function AppAddProduct(){
                                 <input type="text" placeholder="" className="cus-data-box" 
                                 onChange={(e) => setPname(e.target.value)} required/>
                         </div>
-                            <label className="cate-text" for="">Category :</label>
-                            <select name="cate" id="" onChange={(e) => setCate(e.target.value)}>
+                        <div className="cus-data-line">
+                            <label className="cus-data-text" for="">Category:</label>
+                            <select name="cate" className="prod-search" id="" onChange={(e) => setCate(e.target.value)}>
                                 <option value="Water tint">Water tint</option>
                                 <option value="Essential mist">Essential mist</option>
                                 <option value="Liquid ink">Liquid ink</option>
                                 <option value="Cleaners">Cleaners</option>
                                 <option value="Beauty tools">Beauty tools</option>
                             </select>
+                        </div>
                         <div className="cus-data-line">
                             <label for="email" className="cus-data-text">Price:</label>
                             <input type="tel" min  ='0'placeholder="" className="cus-data-box" 
@@ -65,7 +67,7 @@ function AppAddProduct(){
                             onChange={(e) => setDate(e.target.value)} required/>
                         </div>
                         <div className="button-box">
-                            <button type = 'submit'className="add-button" >Add Product</button>
+                            <button type = 'submit'className="add-button" >Add product</button>
                             <a href="/"><button className="add-button">cancel</button></a>
                         </div>
                     </div>

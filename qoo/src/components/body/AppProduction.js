@@ -59,15 +59,16 @@ function AppProduction(){
                     </a>
                 </div>
             </div>
-            
+            <div className="table-box">
             <table class= 'table'>
-                  <thead>
+                  <thead className="table-header">
                       <tr>
                         <th scope="col">Production order name</th>
                         <th scope="col">Price</th>
                         <th scope="col">Quantity</th>
                         <th scope="col">Date</th>
                         <th scope="col">Order recipient name</th>
+                        <th scope="col"></th>
                       </tr>
                     </thead>
                         {data?.map((item, i) => (
@@ -85,6 +86,7 @@ function AppProduction(){
                             </tbody>
                         ))}
                 </table>
+                </div>
         </div>
     )
 }

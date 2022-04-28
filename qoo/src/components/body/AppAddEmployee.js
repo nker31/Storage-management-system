@@ -45,8 +45,7 @@ function SignUp ()  {
         <div className="right-body">
             <AppNavBar/>
             <h1 className="stock-area-header">Qoo - Employee Registration Form </h1>
-                <form className="box-of-top" onSubmit={handleSubmit}>
-                    
+                <form className="box-of-top" onSubmit={handleSubmit}>     
                 <div className="cus-data-area">
                     <div className="cus-data-line">
                         <label for="id_card" className="cus-data-text">ID Card:</label>
@@ -99,7 +98,6 @@ function SignUp ()  {
                         <input type="password" name="password" className="cus-data-box" id="exampleInputPassword1" required/>
                         <span id="passwordHelpInline" class="form-text"></span>Must be 6-20 characters long.
                     </div>
-                    
                     <div className='centered'>
                         <Link to="/employee" type="submit" className="btn btn-secondary">cancel</Link>
                         <button type="submit" className="btn btn-primary">Register</button> 

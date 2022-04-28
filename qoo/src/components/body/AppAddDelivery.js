@@ -26,7 +26,7 @@ function AppAddProduct(){
 
         <div className="right-body">
             <AppNavBar/>
-            <h1 className="stock-area-header">Add Delivery history</h1>
+            <h1 className="stock-area-header">Add delivery history</h1>
             <form className="box-of-top" onSubmit={handleSubmit}>
                 <div className="cus-data-area">
                     <div className="cus-data-line">
@@ -56,8 +56,11 @@ function AppAddProduct(){
                         onChange={(e) => setAddress(e.target.value)} required />
                         <br/>
                     </div>
+                    <div className="save-bt-box">
+                        <button className="save-button" type="submit">Add Delivery</button> 
+                    </div>
+
                 </div>
-                <button className="save-button" type="submit">Add Delivery</button>
             </form> 
                 
         </div>
