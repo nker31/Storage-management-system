@@ -28,10 +28,13 @@ function AppReportType(){
                             <h4>รายงานการสั่งผลิตสินค้า</h4>
                         </div>
                         <div className="report-detail-box">
-                            <p className="report-detail">- detail</p>
-                            <p className="report-detail">- detail</p>
-                            <p className="report-detail">- detail</p>
-                            <p className="report-detail">- detail</p>
+                            <p className="report-detail">- ชื่อรายการสั่งผลิดสินค้า</p>
+                            <p className="report-detail">- ประเภทสินค้า</p>
+                            <p className="report-detail">- ราคา</p>
+                            <p className="report-detail">- จำนวนรายการ</p>
+                            <p className="report-detail">- วันที่สั่งสินค้า</p>
+                            <p className="report-detail">- ชื่อผู้รับสินค้า</p>
+                            <p className="report-detail">- หมายเหตุ</p>
                         </div>
                     </div>
                     <div className="type-box">
@@ -39,10 +42,12 @@ function AppReportType(){
                             <h4>รายงานยอดขาย</h4>
                         </div >
                         <div className="report-detail-box">
-                            <p>- detail</p>
-                            <p>- detail</p>
-                            <p>- detail</p>
-                            <p>- detail</p>
+                            <p>- ชื่อรายการสินค้า</p>
+                            <p>- ชื่อลูกค้าที่สั่งซื้อ</p>
+                            <p>- ประเภทสินค้า</p>
+                            <p>- ราคา</p>
+                            <p>- จำนวนที่สั่งซื้อ</p>
+                            <p>- Tracking number</p>
                         </div>
                     </div>
                     

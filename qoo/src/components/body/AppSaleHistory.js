@@ -22,20 +22,6 @@ function AppSaleHistory(){
     useEffect(() => {
         getData();
       }, []);
-    const handleSubmit = async (event,search) => {
-        event.preventDefault();
-        const product = {search};
-
-        try {
-          const res = await fetch(
-            `https://sheet.best/api/sheets/72bdcffc-3da3-4905-b35f-6aaa8d783189/Product/${search}`
-          );
-          const data = await res.json();
-          setData(Object.keys(data).map((key) => data[key]));
-          } catch (error) {
-          console.log(error);
-          }
-    }
 
     const handleDelete = async (rowIndex) => {
       try {
@@ -53,12 +39,14 @@ function AppSaleHistory(){
       }
     };
 
+
+
     return(
         <div className="right-body">
             <AppNavBar/>
             <h1 className="stock-area-header">Sales History</h1>
             <div className="filter-line">
-                <form className="search-zone" onSubmit={handleSubmit}>
+                <form className="search-zone" >
                     <label for="productname" className="prod-text">Product name:</label>
                     <input type="text" name="search" placeholder="" className="prod-search" onChange={(e) => setSearch(e.target.value)}/>
                     <button className="prod-button" type="submit">search</button>
