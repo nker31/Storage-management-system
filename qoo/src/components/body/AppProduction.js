@@ -54,14 +54,16 @@ function AppProduction(){
                     <input className="prod-search" type="date" name="saleDate" />
                 </div>
                 <div className="add-zone">
-                    <button className="add-button" type="">Add Production History</button>
+                    <a href="/addorder">
+                      <button className="add-button" type="">Add Production History</button>
+                    </a>
                 </div>
             </div>
             
             <table class= 'table'>
                   <thead>
                       <tr>
-                        <th scope="col">Product order name</th>
+                        <th scope="col">Production order name</th>
                         <th scope="col">Price</th>
                         <th scope="col">Quantity</th>
                         <th scope="col">Date</th>
@@ -71,7 +73,7 @@ function AppProduction(){
                         {data?.map((item, i) => (
                             <tbody key={i}>
                               <tr>
-                                <td>{item.Product}</td>
+                                <td>{item.OrderName}</td>
                                 <td>{item.Price}</td>
                                 <td>{item.Quantity}</td>
                                 <td>{item.Date}</td>

@@ -27,33 +27,34 @@ function AppCustomerData(){
 
         <div className="right-body">
             <AppNavBar/>
-            <h1 className="stock-area-header">Customer</h1>
+            <h1 className="stock-area-header">Customer Registration Form</h1>
             <form className="box-of-top" onSubmit={handleSubmit}>
                 <div className="cus-data-area">
                     <div className="cus-data-line">
                         <label for="firstname" className="cus-data-text">Name:</label>
-                        <input type="text" placeholder="" className="cus-data-box" onChange={(e) => setName(e.target.value)} />
+                        <input type="text" placeholder="" className="cus-data-box" 
+                        onChange={(e) => setName(e.target.value)} required/>
                     </div>
                     <div className="cus-data-line">
                         <label for="lastname" className="cus-data-text">Lastname:</label>
                         <input type="text" className="cus-data-box"
-                        onChange={(e) => setLastname(e.target.value)} ></input>
+                        onChange={(e) => setLastname(e.target.value)} required></input>
                         
                     </div>
                     <div className="cus-data-line">
                         <label for="email" className="cus-data-text">Email:</label>
                         <input type="email" name="email" placeholder="" className="cus-data-box" 
-                        onChange={(e) => setEmail(e.target.value)}/>
+                        onChange={(e) => setEmail(e.target.value)} required/>
                     </div>
                     <div className="cus-data-line">
                         <label for="phoneNum" className="cus-data-text">Phone number:</label>
                         <input type="tel" name="" placeholder="" className="cus-data-box"
-                        onChange={(e) => setPhone(e.target.value)} />
+                        onChange={(e) => setPhone(e.target.value)} required/>
                     </div>
                     <div className="cus-data-line">
                         <label for="cusAddress" className="cus-data-text">Address:</label>
                         <input type="text" name="" placeholder="" className="cus-data-box"
-                        onChange={(e) => setAddress(e.target.value)} />
+                        onChange={(e) => setAddress(e.target.value)} required/>
                         <br/>
                     </div>
                 </div>

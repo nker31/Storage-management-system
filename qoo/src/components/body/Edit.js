@@ -66,7 +66,7 @@ function Edit  () {
                     <div className="cus-data-area">
                         <div className="cus-data-line">
                                 <label for="firstname" className="cus-data-text">Product Name:</label>
-                                <input type="text" className="cus-data-box" name="Pname" value ={data.Pname} onChange={handleChange}/>
+                                <input type="text" className="cus-data-box" name="Pname" value ={data.Pname} onChange={handleChange} required/>
                         </div>
                             <label className="cate-text" for="">Category :</label>
                             <select name="Cate" value ={data.Cate} onChange={handleChange} >
@@ -78,23 +78,23 @@ function Edit  () {
                             </select>
                         <div className="cus-data-line">
                             <label for="email" className="cus-data-text">Price:</label>
-                            <input type="tel" min  ='0' className="cus-data-box" name ="Price" value ={data.Price} onChange={handleChange}/>
+                            <input type="tel" min  ='0' className="cus-data-box" name ="Price" value ={data.Price} onChange={handleChange} required/>
                         </div>
                         <div className="cus-data-line">
                             <label for="" className="cus-data-text">Quantity:</label>
-                            <input type="number" min ='0' className="cus-data-box" name ="Quantity" value ={data.Quantity} onChange={handleChange}/>
+                            <input type="number" min ='0' className="cus-data-box" name ="Quantity" value ={data.Quantity} onChange={handleChange} required/>
                         </div>
                         <div className="cus-data-line">
-                            <label for="cusAddress" className="cus-data-text">Production lot:</label>
-                            <input className="cus-data-box" name="ProdLot" value ={data.ProdLot} onChange={handleChange}/>
+                            <label for="cusAddress" className="cus-data-text">Production prder name:</label>
+                            <input className="cus-data-box" text = 'text'name="ProdLot" value ={data.ProdLot} onChange={handleChange} required/>
 
                         </div>
                         <div className="cus-data-line">
                             <label for="cusAddress" className="cus-data-text">Expiry date:</label>
-                            <input className="prod-search" type="date" name="Date" value ={data.Date} onChange={handleChange}/>
+                            <input className="prod-search" type="date" name="Date" value ={data.Date} onChange={handleChange} required/>
                         </div>
                         <div className="button-box">
-                            <button className="add-button" >Add Product</button>
+                            <button className="add-button" >Edit Product</button>
                             <a href='/'>
                               <button className="add-button" >cancel</button>
                             </a>

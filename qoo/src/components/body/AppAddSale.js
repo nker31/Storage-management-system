@@ -29,7 +29,7 @@ function AppAddSale(){
     return (
     <div className="right-body">
         <AppNavBar/>
-        <h1 className="stock-area-header">Add Product</h1>
+        <h1 className="stock-area-header">Add Sale History</h1>
         <form onSubmit={handleSubmit}>
             <div className="box-of-top">
                 <div className="cus-data-area">

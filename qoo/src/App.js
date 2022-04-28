@@ -28,6 +28,10 @@ import AppEmployee from './components/body/AppEmployee';
 import AppProduction from './components/body/AppProduction';
 import AppReportMenu from './components/body/AppReportMenu';
 import AppAddEmployee from './components/body/AppAddEmployee';
+import EditEmployee from './components/body/EditEmployee';
+import AppAddOrder from './components/body/AppAddOrder';
+import EditProduction from './components/body/EditProduction';
+import AppReportType from './components/body/AppReportType';
 
 function App () {
 
@@ -35,13 +39,11 @@ function App () {
     <AuthProvider>
       <Router>
         <div>
-          {/* <h1>Welcome {currentUser.email}</h1> */}
           <Switch>
             <Route exact path = "/"><Main/></Route>
             <Route exact path="/main" component={Main} />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/login" component={LogIn} />
-            <Route exact path="/signup" component={Signup} />
             <Route exact path="/home" component={Home} />
             <div className='App'>
               <AppSideBar/>
@@ -51,19 +53,25 @@ function App () {
                 <Route exact path="/edit/:rowIndex" component={Edit} />
                 <Route exact path='/sales' component={AppSaleHistory} />
                 <Route exact path='/addsales' component={AppAddSale} />
+
                 <Route exact path="/editsale/:rowIndex" component={EditSales} />
                 <Route exact path='/customer' component={AppCustomer} />
                 <Route exact path='/addcustomer' component={AppCustomerData} />
+
                 <Route exact path='/delivery' component={AppDelivery} />
                 <Route exact path='/adddelivery' component={AppAddDelivery} />
                 <Route exact path="/editdelivery/:rowIndex" component={EditDelivery} />
+
                 <Route exact path='/employee' component={AppEmployee} />
                 <Route exact path='/addemployee' component={AppAddEmployee} />
-                
-                <Route exact path="/editemployee/:rowIndex" component={EditDelivery} />
+                <Route exact path="/editemployee/:rowIndex" component={EditEmployee} />
+
                 <Route exact path='/production' component={AppProduction} />
-                <Route exact path="/editproduction/:rowIndex" component={EditDelivery} />
+                <Route exact path='/addorder' component={AppAddOrder} />
+                <Route exact path="/editproduction/:rowIndex" component={EditProduction} />
+
                 <Route exact path='/report' component={AppReportMenu} />
+                <Route exact path='/reporttype' component={AppReportType} />
               </Switch>
             </div>
           </Switch>

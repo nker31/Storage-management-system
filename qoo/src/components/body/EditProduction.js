@@ -5,20 +5,20 @@ import React , { useState , useEffect } from 'react'
 import "./AppAddProduct.css";
 
 
-function EditDelivery  () {
+function EditProduction  () {
   const history = useHistory();
   const { rowIndex } = useParams();
-  const [data, setData] = useState({Tracking:'',
-  Customer:'',
-  Quantity:'',
-  Date:'',
-  Address:''
+  const [data, setData] = useState({
+    OrderName:'',
+    Price:'',
+    Quantity:'',
+    Date:''
   });
 
   const getData = async () => {
     try {
       const res = await fetch(
-        `https://sheet.best/api/sheets/5a12a409-bc6a-44f9-8b1e-85949f930aec/${rowIndex}`
+        `https://sheet.best/api/sheets/925ca4d8-6106-409d-b521-86206538cbfb/${rowIndex}`
       );
       const data = await res.json();
       setData(data[0]);
@@ -38,7 +38,7 @@ function EditDelivery  () {
     e.preventDefault();
     try {
       const res = await fetch(
-        `https://sheet.best/api/sheets/5a12a409-bc6a-44f9-8b1e-85949f930aec/${rowIndex}`,
+        `https://sheet.best/api/sheets/925ca4d8-6106-409d-b521-86206538cbfb/${rowIndex}`,
         {
           method: "PUT",
           headers: {
@@ -48,7 +48,7 @@ function EditDelivery  () {
         }
       );
       if (res.ok) {
-        history.replace("/delivery");
+        history.replace("/production");
       }
     } catch (error) {
       console.log(error);
@@ -58,43 +58,37 @@ function EditDelivery  () {
   return (
     <div className="right-body">
             <AppNavBar/>
-            <h1 className="stock-area-header">Edit Delivery history</h1>
+            <h1 className="stock-area-header">Edit Production</h1>
             <form className="box-of-top" onSubmit={handleSubmit}>
                 <div className="cus-data-area">
                     <div className="cus-data-line">
-                        <label for="firstname" className="cus-data-text">Tracking Number:</label>
-                        <input type="text" name='Tracking'className="cus-data-box" 
-                        value={data.Tracking} onChange={handleChange} required/>
+                        <label for="firstname" className="cus-data-text">Production Order Name:</label>
+                        <input type="text" placeholder="" className="cus-data-box"  name="OrderName"
+                        value={data.OrderName} onChange={handleChange} required/>
                     </div>
                     <div className="cus-data-line">
-                        <label for="lastname" className="cus-data-text">Customer:</label>
-                        <input type="text" className="cus-data-box" name="Customer"
-                        value={data.Customer} onChange={handleChange} required></input>
+                        <label className="cus-data-text">Price:</label>
+                        <input type="tel" min  ='0'placeholder="" className="cus-data-box"  name='Price'
+                        value={data.Price} onChange={handleChange} required></input>
                         
                     </div>
                     <div className="cus-data-line">
                         <label className="cus-data-text">Quantity:</label>
-                        <input type="number" name="Quantity" className="cus-data-box" 
+                        <input type="number" min ='0'placeholder="" className="cus-data-box" name='Quantity'
                         value={data.Quantity} onChange={handleChange} required/>
                     </div>
                     <div className="cus-data-line">
                         <label for="phoneNum" className="cus-data-text">Date:</label>
-                        <input type="date" name='Date'className="cus-data-box"
+                        <input type="date" name='Date'className="cus-data-box" 
                         value={data.Date} onChange={handleChange} required/>
                     </div>
-                    <div className="cus-data-line">
-                        <label for="cusAddress" className="cus-data-text">Address:</label>
-                        <input type="text" name="Address"className="cus-data-box"
-                        value={data.Address} onChange={handleChange} required/>
-                        <br/>
-                    </div>
                 </div>
-                <a href="/delivery">
-                <button className="save-button" type="submit">Edit Delivery</button>
+                <a href="/production">
+                <button className="save-button" type="submit">Edit Production</button>
                 </a>
             </form> 
         </div>
     )
 };
 
-export default EditDelivery;
+export default EditProduction;

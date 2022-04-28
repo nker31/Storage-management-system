@@ -32,7 +32,8 @@ function AppAddProduct(){
                     <div className="cus-data-area">
                         <div className="cus-data-line">
                                 <label for="firstname" className="cus-data-text">Product Name:</label>
-                                <input type="text" placeholder="" className="cus-data-box" onChange={(e) => setPname(e.target.value)}/>
+                                <input type="text" placeholder="" className="cus-data-box" 
+                                onChange={(e) => setPname(e.target.value)} required/>
                         </div>
                             <label className="cate-text" for="">Category :</label>
                             <select name="cate" id="" onChange={(e) => setCate(e.target.value)}>
@@ -44,20 +45,24 @@ function AppAddProduct(){
                             </select>
                         <div className="cus-data-line">
                             <label for="email" className="cus-data-text">Price:</label>
-                            <input type="tel" min  ='0'placeholder="" className="cus-data-box" onChange={(e) => setPrice(e.target.value)}/>
+                            <input type="tel" min  ='0'placeholder="" className="cus-data-box" 
+                            onChange={(e) => setPrice(e.target.value)} required/>
                         </div>
                         <div className="cus-data-line">
                             <label for="" className="cus-data-text">Quantity:</label>
-                            <input type="number" min ='0'placeholder="" className="cus-data-box"onChange={(e) => setQuantity(e.target.value)}/>
+                            <input type="number" min ='0'placeholder="" className="cus-data-box"
+                            onChange={(e) => setQuantity(e.target.value)} required/>
                         </div>
                         <div className="cus-data-line">
-                            <label for="cusAddress" className="cus-data-text">Production lot:</label>
-                            <input type="" placeholder="" className="cus-data-box" onChange={(e) => setLot(e.target.value)}/>
+                            <label for="cusAddress" className="cus-data-text">Product order name:</label>
+                            <input type="text" placeholder="" className="cus-data-box" 
+                            onChange={(e) => setLot(e.target.value)} required/>
 
                         </div>
                         <div className="cus-data-line">
                             <label for="cusAddress" className="cus-data-text">Expiry date:</label>
-                            <input className="prod-search" type="date" name="saleDate" onChange={(e) => setDate(e.target.value)}/>
+                            <input className="prod-search" type="date" name="saleDate" 
+                            onChange={(e) => setDate(e.target.value)} required/>
                         </div>
                         <div className="button-box">
                             <button type = 'submit'className="add-button" >Add Product</button>

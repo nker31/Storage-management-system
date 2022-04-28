@@ -1,7 +1,9 @@
+import React, {useContext} from "react";
 import "./AppNavBar.css";
-import firebaseConfig from "../../config";
+import { AuthContext } from "../Auth";
 
 function AppNavBar(){
+    const { currentUser } = useContext(AuthContext);
     return(
       <div className="nav-bar">
           
@@ -10,10 +12,12 @@ function AppNavBar(){
             <img className="profile-icon" src="./images/profile.png"/>
 
           </div>
+          <a href = '/dashboard'>
           <div className="profile-box-right" >
-            <p className="username-text" onClick={() => firebaseConfig.auth().signOut()}>username</p>
-            <p className="user-role">role</p>
+            <p className="username-text" >{currentUser.email}</p>
           </div>
+
+          </a>
         
        
         </div>
