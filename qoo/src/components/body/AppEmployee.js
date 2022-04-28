@@ -55,15 +55,16 @@ function AppEmployee(){
 
                 </div>
             </div>
-            
+            <div className="table-box">
             <table class= 'table'>
-                  <thead>
+                  <thead className="table-header">
                       <tr>
                         <th scope="col">Employee ID</th>
                         <th scope="col">Firstname</th>
                         <th scope="col">Lastname</th>
                         <th scope="col">ID Card</th>
                         <th scope="col">Phone number</th>
+                        <th scope="col"></th>
                       </tr>
                     </thead>
                         {data?.map((item, i) => (
@@ -81,6 +82,7 @@ function AppEmployee(){
                             </tbody>
                         ))}
                 </table>
+              </div>
         </div>
     )
 }

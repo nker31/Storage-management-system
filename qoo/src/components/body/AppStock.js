@@ -61,15 +61,17 @@ function AppStock(){
 
                 </div>
             </div>
-              <table class= 'table'>
-                  <thead>
-                      <tr>
+            <div className="table-box">
+              <table class= 'table'  >
+                  <thead className="table-header">
+                      <tr >
                         <th scope="col">Product</th>
                         <th scope="col">Price</th>
                         <th scope="col">Quantity</th>
                         <th scope="col">Category</th>
                         <th scope="col">Product lot</th>
                         <th scope="col">Expiry Date</th>
+                        <th scope="col"></th>
                       </tr>
                     </thead>
                         {data?.map((item, i) => (
@@ -88,6 +90,7 @@ function AppStock(){
                             </tbody>
                         ))}
                 </table>
+              </div>
         </div>
     )
 }

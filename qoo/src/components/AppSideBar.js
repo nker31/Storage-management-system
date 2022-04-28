@@ -4,7 +4,12 @@ function AppSideBar(){
     return(
         <div className="side-bar">
             <div className="side-bar-logo-box">
-                <a href="/"><img className="side-bar-logo" src="./images/Qoo.png" /></a>
+                <a href="/">
+                  
+                    <img className="side-bar-logo" src="./images/Qoo.png" />
+
+                  
+                </a>
             </div>
             <div className="menu-box">
             

@@ -15,9 +15,13 @@
     flex-direction: row-reverse;
   }
   .profile-box {
-    margin-top: -10px;
+    /* justify-content: center ;
+    align-items: center; */
+    /* margin-top: -10px; */
+    margin-top: 5px;
     margin-right: 2cm;
     display: flex;
+    height: 50px;
   }
   .profile-icon{
     margin-top: 10px;
@@ -26,17 +30,25 @@
     
   }
   .profile-box-left{
-    width: 50%;
+    width: 30%;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .profile-box-right{
-    width: 50%;
+    width: 70%;
+    /* height: max-content; */
+    margin-top: 10px;
+    margin-left: 10px;
+
   }
   
   .username-text {
     font-size: 16px;
+    /* margin-top: 10px;
+    margin-top: 10px; */
+
   }
   .user-role {
     margin-top: -18px;

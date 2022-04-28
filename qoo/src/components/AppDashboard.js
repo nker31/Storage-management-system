@@ -84,11 +84,11 @@ function AppDashboard(){
             <div className="left-box">
               <div className="topic-box">
                 <img className="hot-sale" src="./images/hot-sale.png" />
-                <h4 className="topic-text">สินค้าขายดีประจำวัน</h4>
+                <h5 className="topic-text">สินค้าขายดีประจำวัน</h5>
               </div>
               <div className="detail-box">
               <table class= 'table'>
-                  <thead>
+                    <thead className="thread">
                       <tr>
                         <th scope="col">Product</th>
                         <th scope="col">Quantity</th>
@@ -97,9 +97,9 @@ function AppDashboard(){
                         {data?.map((item, i) => (
                             <tbody key={i}>
                               {i < 3 &&
-                              <tr>
-                                <td>{item.namesort}</td>
-                                <td>{item.quantitysort}</td>
+                              <tr className="data-in-box">
+                                <td >{item.namesort}</td>
+                                <td >{item.quantitysort}</td>
                               </tr>}
                             </tbody>
                         ))}
@@ -108,8 +108,8 @@ function AppDashboard(){
             </div>
             <div className="right-box">
               <div className="topic-box">
-                <img className="alert" src="./images/alert.png" />
-                <h4 className="topic-text">สินค้าใกล้หมดในสต็อก</h4>
+                <img className="alert-box" src="./images/alert.png" />
+                <h5 className="topic-text">สินค้าใกล้หมดในสต็อก</h5>
               </div>
               <div className="detail-box">
               <table class= 'table'>
@@ -137,7 +137,7 @@ function AppDashboard(){
               <div className="topic-box">
                 
                 <img className="shipping" src="./images/shipping.png" />
-                <h4 className="topic-text">สินค้าที่ถูกจัดส่งล่าสุด</h4>
+                <h5 className="topic-text">สินค้าที่ถูกจัดส่งล่าสุด</h5>
                 
               </div>
               <div className="detail-box">
@@ -168,7 +168,7 @@ function AppDashboard(){
           <div className="tall-box">
             <div className="topic-box">
               <img className="cart" src="./images/cart.png" />
-              <h4 className="topic-text">รายจ่ายสินค้าที่ขายล่าสุด</h4>
+              <h5 className="topic-text">รายการสินค้าที่ขายล่าสุด</h5>
               
             </div>
             <div className="detail-box">              

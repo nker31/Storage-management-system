@@ -27,7 +27,7 @@ function AppCustomerData(){
 
         <div className="right-body">
             <AppNavBar/>
-            <h1 className="stock-area-header">Customer Registration Form</h1>
+            <h1 className="stock-area-header">Add customer</h1>
             <form className="box-of-top" onSubmit={handleSubmit}>
                 <div className="cus-data-area">
                     <div className="cus-data-line">
@@ -57,10 +57,12 @@ function AppCustomerData(){
                         onChange={(e) => setAddress(e.target.value)} required/>
                         <br/>
                     </div>
+                    <div className="save-bt-box">
+                        <button className="save-button" type="submit">Add customer</button> 
+                    </div>
                 </div>
-                <button className="save-button" type="submit">Register</button>
             </form> 
-                
+              
         </div>
     )
 }

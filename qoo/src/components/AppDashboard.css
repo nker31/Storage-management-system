@@ -71,6 +71,26 @@
     margin: 18px;
     border-radius: 20px;
   }
+  .data-table{
+    /* background-color: #42AC53; */
+    border-collapse: separate;
+    border-color: transparent;
+    border-spacing: 0.3px;
+  }
+  .table{
+    /* background-color: #42AC53; */
+    border-collapse: separate;
+    border-color: transparent;
+    border-spacing: 0.3px;
+  }
+  .thread{
+    /* background-color: #FF8888; */
+    /* border-color: transparent; */
+  }
+  .data-in-box{
+    /* background-color: yellow; */
+    /* border-color: transparent; */
+  }
   .topic-text{
     margin-left: 10px;
     margin-top: 5px;
@@ -81,6 +101,7 @@
     min-height: 30px;
     max-height: 35px;
     margin-left: 10px;
+    margin-right: 20px;
     display: flex;
   }
   .hot-sale{
@@ -90,7 +111,7 @@
     height: 35px;
     border-radius: 15px;
   }
-  .alert{
+  .alert-box{
     margin-left: 5px;
     background-color: orange;
     width: 35px;
@@ -147,8 +168,8 @@
   .tall-box{
     height: 90%;
     background-color: white;
-    max-width: 300px;
-    min-width: 250px;
+    max-width: 330px;
+    min-width: 270px;
     margin: 18px;
     border-radius: 20px;
     /* dis */

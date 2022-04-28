@@ -6,12 +6,11 @@
 .cus-data-area{
     /* background-color: aqua; */
     min-height: 120px;
-    min-width: 500px;
-    max-width: 600px;
+    min-width: 400px;
+    max-width: 500px;
 }
 .cus-data-line{
     margin: 15px;
-    
 
 }
 .cus-data-text{
@@ -30,8 +29,14 @@
     border-bottom: 1px solid grey;
     background-color: #f2f2f2;
 }
+.save-bt-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .save-button{
     /* margin-right: 1cm; */
+    min-height: 30px;
     margin-top: 10px;
     height: 22px;
     color: white;

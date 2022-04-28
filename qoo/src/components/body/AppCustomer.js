@@ -24,7 +24,8 @@ function AppCustomer(){
   
     return(
         <div className="right-body">
-            <AppNavBar/>            
+            <AppNavBar/>          
+            <h1 className="stock-area-header">Customer</h1>  
             <div className="filter-line">
                 <div className="search-zone">
                     <label for="productname" className="prod-text">Customer name</label>
@@ -36,14 +37,16 @@ function AppCustomer(){
                     <a href="/addcustomer"><button className="add-button">Add Customer</button></a>
                 </div>
             </div>
+            <div className="table-box">
             <table class= 'table'>
-                  <thead>
+                  <thead className="table-header">
                       <tr>
                         <th scope="col">Name</th>
                         <th scope="col">Lastname</th>
                         <th scope="col">Email</th>
                         <th scope="col">Phone</th>
                         <th scope="col">Address</th>
+                        <th scope="col"></th>
                       </tr>
                     </thead>
                         {data?.map((item, i) => (
@@ -58,7 +61,7 @@ function AppCustomer(){
                             </tbody>
                         ))}
                 </table>
-            
+                </div>
         </div>
     )
 }
