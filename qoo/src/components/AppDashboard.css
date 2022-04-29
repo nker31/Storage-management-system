@@ -48,7 +48,8 @@
   .db-area {
     background-color: #f2f2f2;
     display: flex;
-    max-width: 1300px;
+    max-width: 1350px;
+    min-width: 1200px;
     justify-content: center;
   }
   
