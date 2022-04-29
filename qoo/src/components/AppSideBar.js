@@ -8,7 +8,7 @@ function AppSideBar(){
                   
                     <img className="side-bar-logo" src="./images/Qoo.png" />
 
-                  
+    
                 </a>
             </div>
             <div className="menu-box">

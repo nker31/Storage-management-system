@@ -77,7 +77,7 @@ function AppDashboard(){
   return(
       <div className="right-body">
       <AppNavBar/>
-      <h1 className="db-area-header">Dashboard</h1>
+      <h1 className="stock-area-header">Dashboard</h1>
       <div className="db-area">
         <div className="left-part">
           <div className="two-in-one">
