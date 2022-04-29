@@ -92,8 +92,12 @@ function EditSales  () {
                     </div>
                     <div className="cus-data-line">
                         <label for="cusAddress" className="cus-data-text">Status:</label>
-                        <input type="text" className="cus-data-box" name ="Status" value ={data.Status} onChange={handleChange}/>
-
+                        <select className="cus-data-box" 
+                            name ="Status" value ={data.Status} onChange={handleChange}>
+                            <option value="Water tint">Pending</option>
+                            <option value="Essential mist">Finished</option>
+                            <option value="Liquid ink">Cancelled</option>
+                        </select>
                     </div>
                     <div className="cus-data-line">
                         <label for="cusAddress" className="cus-data-text">Date:</label>

@@ -7,12 +7,15 @@ import { useHistory } from "react-router-dom";
 
 function AppAddSale(){
     const history = useHistory();
+    const [data1, setData1] = useState({
+        Quantity:''
+    });
     const [ Pname, setPname] = useState('');
     const [ Customer, setCustomer] = useState('');
     const [ Cate, setCate] = useState('Water tint');
     const [ Price, setPrice] = useState('');
     const [ Quantity, setQuantity] = useState('');
-    const [ Status, setStatus] = useState('');
+    const [ Status, setStatus] = useState('Pending');
     const [ Date, setDate] = useState('');
     const [ Total, setTotal] = useState('');
 
@@ -26,6 +29,25 @@ function AppAddSale(){
         history.replace('/sales');
         });
     }
+
+    const getData1 = async () => {
+        try {
+          const res = await fetch(
+            "https://sheet.best/api/sheets/670762db-3d19-4d72-8348-85b19e894d9a/Pname/SC#lovelypeach"
+          );
+          const data1 = await res.json();
+          setData1(data1);
+        //   setData1(Object.keys(data1).map((key) => data1[key]));
+          } catch (error) {
+          console.log(error);
+          }
+          console.log(data1);
+      };
+
+    useEffect(() => {
+        getData1();
+      }, []);
+      
     return (
     <div className="right-body">
         <AppNavBar/>
@@ -51,24 +73,35 @@ function AppAddSale(){
                         </select>
                     <div className="cus-data-line">
                         <label for="email" className="cus-data-text">Price:</label>
-                        <input type="tel" min  ='0'placeholder="" className="cus-data-box" onChange={(e) => setPrice(e.target.value)} required/>
+                        <input type="tel" min  ='0'placeholder="" className="cus-data-box" 
+                        onChange={(e) => setPrice(e.target.value)} required/>
                     </div>
                     <div className="cus-data-line">
                         <label for="" className="cus-data-text">Quantity:</label>
-                        <input type="number" min ='0'placeholder="" className="cus-data-box"onChange={(e) => setQuantity(e.target.value)} required/>
+                        <input type="number" min ='0'placeholder="" className="cus-data-box" 
+                        onChange={(e) => setQuantity(e.target.value)} required/>
                     </div>
+
                     <div className="cus-data-line">
                         <label for="cusAddress" className="cus-data-text">Status:</label>
-                        <input type="text" placeholder="" className="cus-data-box" onChange={(e) => setStatus(e.target.value)} required/>
-
+                        <select className="cus-data-box" 
+                        onChange={(e) => setStatus(e.target.value)} required>
+                            <option value="Water tint">Pending</option>
+                            <option value="Essential mist">Finished</option>
+                            <option value="Liquid ink">Cancelled</option>
+                        </select>
                     </div>
+
                     <div className="cus-data-line">
                         <label for="cusAddress" className="cus-data-text">Date:</label>
-                        <input className="prod-search" type="date" name="saleDate" onChange={(e) => setDate(e.target.value)} required/>
+                        <input className="prod-search" type="date" name="saleDate" 
+                        onChange={(e) => setDate(e.target.value)} required/>
                     </div>
                     <div className="cus-data-line">
                         <label for="cusAddress" className="cus-data-text">Total:</label>
-                        <input className="prod-search" type="number" name="saleDate" onChange={(e) => setTotal(e.target.value)} required/>
+                        <input className="prod-search" name="Quantity" 
+                        onChange={(e) => setTotal(e.target.value)}
+                        />
                     </div>
                     <div className="button-box">
                         <button type = 'submit'className="add-button" >Add Sale History</button>

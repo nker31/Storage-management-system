@@ -47,17 +47,17 @@ function AppAddProduct(){
                         </div>
                         <div className="cus-data-line">
                             <label for="email" className="cus-data-text">Price:</label>
-                            <input type="tel" min  ='0'placeholder="" className="cus-data-box" 
+                            <input type="number" min='0' step='10'className="cus-data-box" 
                             onChange={(e) => setPrice(e.target.value)} required/>
                         </div>
                         <div className="cus-data-line">
                             <label for="" className="cus-data-text">Quantity:</label>
-                            <input type="number" min ='0'placeholder="" className="cus-data-box"
+                            <input type="number" min ='200'placeholder="" className="cus-data-box"
                             onChange={(e) => setQuantity(e.target.value)} required/>
                         </div>
                         <div className="cus-data-line">
                             <label for="cusAddress" className="cus-data-text">Product order name:</label>
-                            <input type="text" placeholder="" className="cus-data-box" 
+                            <input type="text" maxLength="4" placeholder="" className="cus-data-box" 
                             onChange={(e) => setLot(e.target.value)} required/>
 
                         </div>

@@ -44,6 +44,7 @@ function AppCustomerData(){
                     <div className="cus-data-line">
                         <label for="email" className="cus-data-text">Email:</label>
                         <input type="email" name="email" placeholder="" className="cus-data-box" 
+                        id="exampleInputEmail1"
                         onChange={(e) => setEmail(e.target.value)} required/>
                     </div>
                     <div className="cus-data-line">
