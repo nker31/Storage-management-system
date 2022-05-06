@@ -23,6 +23,7 @@ function AppDashboard(){
       } catch (error) {
       console.log(error);
       }
+      console.log(data);
   };
   //out of stock
   const getData1 = async () => {
@@ -35,6 +36,7 @@ function AppDashboard(){
       } catch (error) {
       console.log(error);
       }
+      console.log(data1);
   };
   //lastest
   const getData2 = async () => {
@@ -47,6 +49,7 @@ function AppDashboard(){
       } catch (error) {
       console.log(error);
       }
+      console.log(data2);
   };
   //delivery
   const getData3 = async () => {
@@ -59,6 +62,7 @@ function AppDashboard(){
       } catch (error) {
       console.log(error);
       }
+      console.log(data3);
   };
 
   useEffect(() => {

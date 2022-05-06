@@ -54,7 +54,7 @@ function AppAddOrder(){
                         </div>
                         <div className="button-box">
                             <button type = 'submit'className="add-button" >Add Product</button>
-                            <a href="/"><button className="add-button">cancel</button></a>
+                        
                         </div>
                     </div>
                 </div>

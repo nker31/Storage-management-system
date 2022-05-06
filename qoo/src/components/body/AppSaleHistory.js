@@ -68,7 +68,6 @@ function AppSaleHistory(){
                         <th scope="col">Product</th>
                         <th scope="col">Customer</th>
                         <th scope="col">Category</th>
-                        <th scope="col">Price</th>
                         <th scope="col">Quantity</th>
                         <th scope="col">Status</th>
                         <th scope="col">Date</th>
@@ -82,7 +81,6 @@ function AppSaleHistory(){
                                 <td>{item.Pname}</td>
                                 <td>{item.Customer}</td>
                                 <td>{item.Cate}</td>
-                                <td>{item.Price}</td>
                                 <td>{item.Quantity}</td>
                                 <td>{item.Status}</td>
                                 <td>{item.Date}</td>

@@ -18,16 +18,20 @@ function LogIn() {
         .catch(e => alert(e.message))
         
     }
+    
     const { currentUser } = useContext(AuthContext);
+    // const refresh = window.location.reload();
     if (currentUser) {
-        return <Redirect to="/" />;
+        history.replace('/');
+        window.location.reload();
+                
     }
     return (
         <>
         <div className="header-log">
             <div className = "container-log">
                 <div className = "header-con-log">
-                    <div className = "logo-login"><a href="/">Qoo - Storage Mangement System</a>
+                    <div className = "logo-login"><a href="/">Qoo - Storage Management System</a>
                     </div>
                 </div>
             </div>

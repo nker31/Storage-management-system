@@ -46,7 +46,7 @@ function App () {
             <Route exact path="/login" component={LogIn} />
             <Route exact path="/home" component={Home} />
             <div className='App'>
-              <AppSideBar/>
+              <SwitchPage/>
               <Switch>
                 <Route exact path="/stock" component={AppStock} />
                 <Route exact path="/add" component={AppAddProduct} />
