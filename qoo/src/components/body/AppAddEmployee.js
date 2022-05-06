@@ -99,7 +99,7 @@ function SignUp ()  {
                         <span id="passwordHelpInline" class="form-text"></span>Must be 6-20 characters long.
                     </div>
                     <div className='centered'>
-                        <Link to="/employee" type="submit" className="btn btn-secondary">cancel</Link>
+                        
                         <button type="submit" className="btn btn-primary">Register</button> 
                     </div>
                 </div>
