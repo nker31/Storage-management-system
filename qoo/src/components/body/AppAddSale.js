@@ -17,13 +17,12 @@ function AppAddSale(){
     const [ Quantity, setQuantity] = useState('');
     const [ Status, setStatus] = useState('Pending');
     const [ Date, setDate] = useState('');
-    const [ Total, setTotal] = useState('');
     
     const handleSubmit = (event) => {
         event.preventDefault();
-        const product = {Pname,Customer,Cate,Quantity,Status,Date,Total};
+        const product = {Pname,Customer,Cate,Quantity,Status,Date};
 
-        axios.post('https://sheet.best/api/sheets/72bdcffc-3da3-4905-b35f-6aaa8d783189',product).then(response => {
+        axios.post('https://sheet.best/api/sheets/670762db-3d19-4d72-8348-85b19e894d9a/tabs/salehistory',product).then(response => {
             console.log(response);
         history.replace('/sales');
         window.location.reload();
@@ -31,7 +30,7 @@ function AppAddSale(){
     }
 
 
-    
+
     const getData1 = async () => {
         try {
             const res = await fetch(
@@ -136,12 +135,6 @@ function AppAddSale(){
                         <label for="cusAddress" className="cus-data-text">Date:</label>
                         <input className="prod-search" type="date" name="saleDate" 
                         onChange={(e) => setDate(e.target.value)} required/>
-                    </div>
-                    <div className="cus-data-line">
-                        <label for="cusAddress" className="cus-data-text">Total:</label>
-                        <input className="prod-search" name="Quantity" 
-                        onChange={(e) => setTotal(e.target.value)}
-                        />
                     </div>
                     <div className="button-box">
                         <button type = 'submit'className="add-button" >Add Sale History</button> 

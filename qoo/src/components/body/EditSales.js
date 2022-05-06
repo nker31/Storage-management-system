@@ -22,7 +22,7 @@ function EditSales  () {
   const getData = async () => {
     try {
       const res = await fetch(
-        `https://sheet.best/api/sheets/121467ae-6bc4-428a-b873-3f2db2c6a168/${rowIndex}`
+        `https://sheet.best/api/sheets/670762db-3d19-4d72-8348-85b19e894d9a/tabs/salehistory/${rowIndex}`
       );
       const data = await res.json();
       setData(data[0]);
@@ -42,7 +42,7 @@ function EditSales  () {
     e.preventDefault();
     try {
       const res = await fetch(
-        `https://sheet.best/api/sheets/121467ae-6bc4-428a-b873-3f2db2c6a168/${rowIndex}`,
+        `https://sheet.best/api/sheets/670762db-3d19-4d72-8348-85b19e894d9a/tabs/salehistory/${rowIndex}`,
         {
           method: "PUT",
           headers: {

@@ -16,7 +16,7 @@ function AppDashboard(){
   const getData = async () => {
     try {
       const res = await fetch(
-        "https://sheet.best/api/sheets/72bdcffc-3da3-4905-b35f-6aaa8d783189/tabs/test2"
+        "https://sheet.best/api/sheets/670762db-3d19-4d72-8348-85b19e894d9a/tabs/bestsales"
       );
       const data = await res.json();
       setData(Object.keys(data).map((key) => data[key]));
@@ -42,7 +42,7 @@ function AppDashboard(){
   const getData2 = async () => {
     try {
       const res = await fetch(
-        "https://sheet.best/api/sheets/72bdcffc-3da3-4905-b35f-6aaa8d783189/tabs/history"
+        "https://sheet.best/api/sheets/670762db-3d19-4d72-8348-85b19e894d9a/tabs/history"
       );
       const data2 = await res.json();
       setData2(Object.keys(data2).map((key) => data2[key]));

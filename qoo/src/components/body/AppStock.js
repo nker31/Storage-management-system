@@ -79,7 +79,7 @@ function AppStock(){
                               <tr>
                                 <td>{item.Pname}</td>
                                 <td>{item.Price}</td>
-                                <td>{item.Quantity}</td>
+                                <td>{item.PriceUpdate}</td>
                                 <td>{item.Cate}</td>
                                 <td>{item.ProdLot}</td>
                                 <td>{item.Date}</td>
